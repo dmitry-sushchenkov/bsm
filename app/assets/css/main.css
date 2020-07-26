@@ -271,6 +271,12 @@ nav .nav__content .nav__tools a {
     margin-bottom: 25px;
 }
 
+
+.map {
+    height: 860px;
+    width: 100%;
+    position: relative;
+}
 .inner__header {
     position: absolute;
     bottom: 60px;

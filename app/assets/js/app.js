@@ -34,11 +34,34 @@ ScrollReveal({
 
 ScrollReveal().reveal("[data-reveal-title]", { viewFactor: .2 });
 ScrollReveal().reveal("[data-reveal-section-head] > *", { viewFactor: .2 });
-ScrollReveal().reveal("[data-reveal-section]", { viewFactor: .2 }); // sections
+ScrollReveal().reveal("[data-reveal-section]", { viewFactor: .2 });
 ScrollReveal().reveal("[data-reveal-grid] > *", { viewFactor: .2, interval: 200 }); 
-ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 }); // cards in grid
+ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 });
 
 $(window).scroll(function() {           
     var st = $(this).scrollTop(); 
     $("span").css({ "transform" : "translate( -" + st /120 + "%" });
+});
+
+DG.then(function () {
+    map = DG.map('map', {
+        center: [43.113244, 131.88100],
+        zoom: 17,
+        touchZoom: true,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        geoclicker: false,
+        zoomControl: false,
+        boxZoom: false,
+        fullscreenControl: false,
+    });
+
+myIcon = DG.icon({
+    iconUrl: '/assets/icons/marker.svg',
+        iconSize: [70, 94]
+    });
+
+    DG.marker([43.113244, 131.881002], {
+        icon: myIcon
+    }).addTo(map);
 });

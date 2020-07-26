@@ -17,7 +17,7 @@
 		<meta property="og:description" content="">
 		<meta property="og:url" content="">
 		<meta property="og:image" content="">
-		<meta property="og:site_name" content="ПрофИмпорт">
+		<meta property="og:site_name" content="">
 		<!-- Шаблон базовых изображений -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon180x180.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon32x32.png">
@@ -27,8 +27,9 @@
 		<!-- Подключеный стили -->
         <link rel="stylesheet" href="assets/css/fonts.css">
         <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        
+        <link rel="stylesheet" href="assets/css/main.css">  
+
+        <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     </head>
     <body>
         <nav>
@@ -61,14 +62,14 @@
                     <div class="header__block">
                         <div class="header__block__content">
                             <p> Комплектование экипажей судов для компании Bernhard Schulte Shipmanagement.<br>Лидер на рынке в сфере качества, универсальности.</p>
-                            <a class="btn" href="http://192.168.0.104:3000/index.html#">Посмотреть вакансии</a>
+                            <a class="btn" href="vacancies.html">Посмотреть вакансии</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="inner__header" data-reveal-section="" data-sr-id="0" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(.25,.1,.25,1) 0s, transform 0.6s cubic-bezier(.25,.1,.25,1) 0s;">
+            <div class="inner__header">
                 <div class="container">
-                    <div class="services__header">
+                    <div class="services__header" data-reveal-title>
                         <div class="item">
                             <p>Трудоустройство моряков</p>                     
                         </div>
@@ -87,20 +88,22 @@
         </div>
         <section class="demands">
             <div class="container">
-                <div class="demands__block" data-reveal-section="" data-sr-id="2" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(.25,.1,.25,1) 0s, transform 0.6s cubic-bezier(.25,.1,.25,1) 0s;">
+                <div class="demands__block" data-reveal-section>
                     <p>Обязательное требование для всех соискателей - это высокий профессианальный уровень, хорошее знание английского языка, опыт работы в «смешанных» экипажах, а так же наличие действующих сертификатов в соответствии с SOLAS, STCW-78/95 и другим международным стандартам.
                     </p>
                     <p>Все наши кандидаты проходят тестирование "SETS PLUS" по английскому языку и профильное, в соответствии с требованием судовладельцев Bernhard Schulte Shipmanagement.</p>
-                    <a class="btn" href="http://192.168.0.104:3000/index.html">Заполнить анкету</a>
+                    <a class="btn" href="#">Заполнить анкету</a>
                 </div>
             </div>
-            <span style="transform: translate(0%);">
+            <span>
                 <p>BSM</p>
                 <p>BSM</p>
                 <p>BSM</p>
             </span>
         </section> 
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/scrollreveal@4.js"></script>
-    <script src="assets/js/app.js"></script>
-</body></html>
+        <div id="map" class="map"></div>
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/scrollreveal@4.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
