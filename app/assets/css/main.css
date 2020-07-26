@@ -271,7 +271,6 @@ nav .nav__content .nav__tools a {
     margin-bottom: 25px;
 }
 
-
 .map {
     height: 860px;
     width: 100%;
@@ -531,6 +530,119 @@ nav .nav__content .nav__tools a {
     color: #fff;
 }
 
+.vacancy__row .vacancy__main {
+    padding: 45px;
+    background: #1C3B69;
+    border-radius: 3px;
+    height: min-content;
+}
+
+.vacancy__row .vacancy__main .item {
+    margin-bottom: 50px;
+}
+
+.vacancy__row .vacancy__main .item:last-child {
+    margin-bottom: 0;
+}
+
+.vacancy__row .vacancy__main .item .vacancy__item__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 116.18%;
+    color: #fff;
+    opacity: .5;
+    margin-bottom: 5px;
+}
+
+.vacancy__row .vacancy__main .item .vacancy__item__title {
+    font-size: 35px;
+    line-height: 116.18%;
+    color: #fff;  
+    font-weight: 700;  
+}
+
+.step__liner {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.step__liner .step__item {
+    width: 258px;
+}
+
+.step__liner .step__item p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 116.18%;
+    color: #fff;
+}
+
+.step__liner .step__item span {
+    background: #0475CA;
+    border-radius: 20px;
+    height: 13px;
+    display: block;
+    margin-top: 20px;
+}
+
+.step__item.active {
+    cursor: pointer;
+}
+
+.step__item.active span {
+    background: #04CA3B;
+}
+
+.step__item:not(.active) {
+    opacity: .5;
+}
+
+.step .form__row .title  {
+    margin-bottom: 40px;
+}
+
+.step .form__row .title p {
+    font-size: 40px;
+    line-height: 116.18%;
+    color: #fff;
+}
+
+
+.step .form__row .subtitle p {
+    font-size: 22px;
+    line-height: 116.18%;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.step .form__row .form__row__item .item {
+    
+}
+
+.step .form__row .form__row__item {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.step .form__row .form__row__item .item input {
+    background: #1C3B69;
+    border: 1px solid #456493;
+    border-radius: 3px;
+    color: #fff;
+    padding: 14px 16px;
+    width: 316.66px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #fff;
+}
 
 @media (min-width: 1200px) {
     .container {
