@@ -40,5 +40,5 @@ ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 }); // cards in grid
 
 $(window).scroll(function() {           
     var st = $(this).scrollTop(); 
-    $("span").css({ "transform" : "translate( -" + st /20 + "%" });
+    $("span").css({ "transform" : "translate( -" + st /120 + "%" });
 });
