@@ -390,7 +390,12 @@ nav .nav__content .nav__tools a {
     -webkit-text-stroke: 2px  #005DA3;
     -webkit-text-fill-color: #f7f7f7;
     z-index: 0;
-    margin: 0 50px;  
+    margin: 0 50px; 
+    cursor: default; 
+}
+
+.demands span p::selection {
+    background-color: transparent;
 }
 
 .demands .demands__block {
@@ -724,7 +729,128 @@ nav .nav__content .nav__tools a {
 }
 
 .company .reference__row {
-    
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.company .reference__row .item {
+    padding: 25px 40px;
+    display: block;
+    width: 420px;
+    background-color: #fff;
+    margin-bottom: 45px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.company .reference__row .item h2 {
+    font-size: 18px;
+    line-height: 28px;
+    -o-transition: ll .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.company .reference__row .item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #0088CC;
+    background-color: #0088CC;
+    -o-transition: ll .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    transform: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.company .reference__row .item:hover h2 {
+    color: #fff;
+    position: relative;
+}
+
+.company .reference__row .item:hover:before {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.company .reference__content__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 50px;   
+}
+
+.company .reference__content__row .content__text {
+    width: 890px;
+}
+
+.company .reference__content__row .content__text p {
+    font-size: 23px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.company .reference__content__row .content__text p:last-child {
+    margin-bottom: 0;
+}
+
+.navigation-list .list_item {
+    padding: 25px 40px;
+    display: block;
+    width: 420px;
+    background-color: #fff;
+    margin-bottom: 45px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.navigation-list .list_item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #0088CC;
+    background-color: #0088CC;
+    -o-transition: ll .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    transform: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.navigation-list .list_item:hover:before {
+    height: 100%;
+    border-radius: 3px;
+}
+.navigation-list .list_item h2 {
+    font-size: 18px;
+    line-height: 28px;
+    -o-transition: ll .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+}
+
+.navigation-list .list_item:hover h2 {
+    color: #fff;
 }
 
 @media (min-width: 1200px) {

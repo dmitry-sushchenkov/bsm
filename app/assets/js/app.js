@@ -58,7 +58,7 @@ DG.then(function () {
 
 myIcon = DG.icon({
     iconUrl: '/assets/icons/marker.svg',
-        iconSize: [70, 94]
+        iconSize: [100]
     });
 
     DG.marker([43.113244, 131.881002], {
