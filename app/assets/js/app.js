@@ -40,7 +40,7 @@ ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 });
 
 $(window).scroll(function() {           
     var st = $(this).scrollTop(); 
-    $("span").css({ "transform" : "translate( -" + st /120 + "%" });
+    $(".demands span").css({ "transform" : "translate( -" + st /120 + "%" });
 });
 
 DG.then(function () {

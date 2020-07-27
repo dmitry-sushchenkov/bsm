@@ -104,6 +104,61 @@ select option {
     transform: rotate(100deg);
 }
 
+.form-checkbox {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    width: auto;
+    overflow: visible;
+}
+
+.form-checkbox-label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.form-checkbox-label span::selection {
+    background: transparent;
+ }
+
+.form-checkbox-label:before {
+    content: "";
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: text-top;
+    width: 22px;
+    height: 22px;
+    margin-top: -2px;
+    background: #1C3B69;
+    border-radius: 3px;
+}
+
+.form-checkbox:checked+.form-checkbox-label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 3px;
+    width: 16px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% auto;
+    background-color: #1c3b69;
+    background-image: url(../icons/checkmark.svg);
+}
+
+.form-checkbox-label span {
+    color:#fff;
+}
+
 nav {
     background: rgba(255, 255, 255, 0.7);
     height: 88px;
@@ -353,12 +408,12 @@ nav .nav__content .nav__tools a {
     margin-bottom: 40px
 }
 
-.work__content {
+.work__content, .company {
     padding: 120px 0;
     background: #102D57;
 }
 
-.work__content .work__title {
+.work__content .work__title, .company .work__title {
     margin-top: 74px;
 }
 
@@ -566,7 +621,6 @@ nav .nav__content .nav__tools a {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin-bottom: 80px;
 }
 
 .step__liner .step__item {
@@ -601,7 +655,15 @@ nav .nav__content .nav__tools a {
 }
 
 .step .form__row .title  {
-    margin-bottom: 40px;
+
+}
+
+.step .form__row .block {
+    padding: 80px 0;
+}
+
+.step .form__row .block .sub_block {
+    margin-top: 40px;
 }
 
 .step .form__row .title p {
@@ -615,18 +677,24 @@ nav .nav__content .nav__tools a {
     font-size: 22px;
     line-height: 116.18%;
     color: #fff;
-    margin-bottom: 30px;
-}
-
-.step .form__row .form__row__item .item {
-    
 }
 
 .step .form__row .form__row__item {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.step .form__row .form__row__item .item {
+    margin-right: 30px;
+}
+
+.step .form__row .form__row__item .item:last-child {
+    margin-right: 0;
 }
 
 .step .form__row .form__row__item .item input {
@@ -636,12 +704,27 @@ nav .nav__content .nav__tools a {
     color: #fff;
     padding: 14px 16px;
     width: 316.66px;
-    margin-bottom: 30px;
     font-size: 16px;
 }
 
 ::placeholder {
     color: #fff;
+}
+
+.company {
+    background-color: #F7F7F7;
+}
+
+.company .breadcrumbs ul li a, .company  .breadcrumbs ul li span {
+    color: #2E2E43;
+}
+
+.company h1 {
+    color: #2E2E43;
+}
+
+.company .reference__row {
+    
 }
 
 @media (min-width: 1200px) {
