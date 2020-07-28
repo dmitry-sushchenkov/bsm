@@ -853,6 +853,53 @@ nav .nav__content .nav__tools a {
     color: #fff;
 }
 
+.error__page {
+    height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.error__page .error__content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: stretch;
+}
+
+.error__page .error__content .error__page__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.error__page .error__content .error__page__text .block h1 {
+    margin-bottom: 15px;
+}
+
+.error__page .error__content .error__page__text .block p {
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
+    margin-bottom: 43px;
+}
+
+.error__page .error__content .error__page__nums > span {
+    font-weight: 800;
+    font-size: 287.533px;
+    line-height: 352px;
+    color: #1C3B69;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1400px;
