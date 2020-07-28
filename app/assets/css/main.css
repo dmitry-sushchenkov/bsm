@@ -256,9 +256,9 @@ nav .nav__content .nav__tools a {
 
 .breadcrumbs ul li a,
 .breadcrumbs ul li span {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 15px;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -738,13 +738,14 @@ nav .nav__content .nav__tools a {
 }
 
 .company .reference__row .item {
-    padding: 25px 40px;
+    padding: 40px 40px;
     display: block;
-    width: 420px;
+    width: 430px;
     background-color: #fff;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
     position: relative;
     border-radius: 3px;
+    box-shadow: 0 0 10px rgba(63, 63, 63, 0.05);
 }
 
 .company .reference__row .item h2 {
@@ -900,6 +901,29 @@ nav .nav__content .nav__tools a {
     line-height: 352px;
     color: #1C3B69;
 }
+
+.block_simple {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.block_simple .block {
+    width: 645px;
+}
+
+.block_simple .block p,
+.block_simple .block li {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.block_simple .block ul {
+    margin-top: 30px;
+}
+
 
 @media (min-width: 1200px) {
     .container {
