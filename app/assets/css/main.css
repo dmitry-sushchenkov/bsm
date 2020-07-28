@@ -295,6 +295,7 @@ nav .nav__content .nav__tools a {
 }
 
 .main__header .title {
+    width: 656px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
