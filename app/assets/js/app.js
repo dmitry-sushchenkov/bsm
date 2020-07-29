@@ -1,8 +1,21 @@
+var header = $('nav'),
+		scrollPrev = 0;
+
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+ 
+	if ( scrolled > 100 && scrolled > scrollPrev ) {
+		header.addClass('out');
+	} else {
+		header.removeClass('out');
+	}
+	scrollPrev = scrolled;
+});
+
 ScrollReveal({
     delay: 0,
     distance: '100px',
     duration: 600,
-    // easing: 'cubic-bezier(0.5, 0, 0, 1)',
     easing: 'cubic-bezier(.25,.1,.25,1)',
     interval: 0,
     opacity: 0,
@@ -42,6 +55,29 @@ $(window).scroll(function() {
     var st = $(this).scrollTop(); 
     $(".demands span").css({ "transform" : "translate( -" + st /120 + "%" });
 });
+
+
+function newFunction() {
+    const q = selector => document.querySelector(selector),
+        on = 'addEventListener';
+
+    const fullscreen = () => {
+        var elem = q('.lazy');
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        }
+        else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        }
+        else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        }
+    };
+
+    q('#btnFull')[on]('click', fullscreen);
+    q('#btnPlay')[on]('click', () => myPlayer.play());
+    q('#btnPause')[on]('click', () => myPlayer.pause());
+}
 
 DG.then(function () {
     map = DG.map('map', {
