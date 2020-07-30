@@ -104,7 +104,7 @@ gulp.task('watch', function() {
 });
 
 // Начать работу проекта
-gulp.task('start-work', gulp.parallel('start', 'watch'));
+gulp.task('run-dev', gulp.parallel('start', 'watch'));
 
 // Закончить работу проекта
-gulp.task('end-work', gulp.series('min-css', 'min-img', 'min-icons'));
+gulp.task('run-build', gulp.series('min-css', 'min-img', 'min-icons'));

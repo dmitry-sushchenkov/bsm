@@ -1,12 +1,12 @@
 {
-  "name": "tsj",
+  "name": "33/87 STUDIO",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "3387 Studio",
+  "author": "33/87 STUDIO",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
