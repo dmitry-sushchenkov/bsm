@@ -56,27 +56,32 @@ $(window).scroll(function() {
     $(".demands span").css({ "transform" : "translate( -" + st /120 + "%" });
 });
 
-
-function newFunction() {
-    const q = selector => document.querySelector(selector),
+window.onload = function() {
+    const video = selector => document.querySelector(selector),
         on = 'addEventListener';
 
-    const fullscreen = () => {
-        var elem = q('.lazy');
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        }
-        else if (elem.mozRequestFullScreen) {
-            elem.mozRequestFullScreen();
-        }
-        else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        }
-    };
+        const fullscreen = ()=> {
+            var elem = q('#myContainer')
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+              elem.webkitRequestFullscreen();
+            }
+          }
 
-    q('#btnFull')[on]('click', fullscreen);
-    q('#btnPlay')[on]('click', () => myPlayer.play());
-    q('#btnPause')[on]('click', () => myPlayer.pause());
+        video('#btnPlay')[on]('click', () => myPlayer.play());
+        video('#myPlayer')[on]('click', () => myPlayer.pause());
+        video('#myPlayer')[on]('dblclick', fullscreen)
+
+        $('#btnPlay').click(function () {
+            $('.video__play').fadeOut(500);
+        })
+
+        $('#myPlayer').click(function () {
+            $('.video__play').fadeIn(500);
+        })
 }
 
 DG.then(function () {

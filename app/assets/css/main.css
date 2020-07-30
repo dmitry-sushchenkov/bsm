@@ -34,6 +34,11 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
 ol, ul {
     list-style-type: none;
 }
@@ -779,6 +784,7 @@ body {
 
 .company .reference__row .item h2 {
     font-size: 18px;
+    font-weight: 400;
     line-height: 28px;
     -o-transition: ll .3s ease;
     -webkit-transition: all .3s ease;
@@ -878,6 +884,7 @@ body {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     position: relative;
+    font-weight: 400;
 }
 
 .navigation-list .list_item:hover h2 {
@@ -961,6 +968,7 @@ body {
     background-color: #102D57;
     padding: 70px;
     height: 540px;
+    margin-bottom: 290px;
 }
 
 .wrap_block .company__stat .stat__row {
@@ -994,7 +1002,7 @@ body {
 }
 
 .wrap_block .company__stat .video__block {
-    position: absolute; 
+    position: relative; 
     height: 600px;
     width: 100%;
 }
@@ -1002,7 +1010,8 @@ body {
 .wrap_block .company__stat .video__block video {
     width: 100%;
     height: 100%;
-    object-fit: cover;   
+    object-fit: cover;
+    cursor: pointer;  
 }
 
 .wrap_block .company__stat .video__block .video__play {
@@ -1013,9 +1022,15 @@ body {
     height: 100%;
     z-index: 10;
     padding: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.wrap_block .company__stat .video__block:after {
+.wrap_block .company__stat .video__block .video__play:after {
     background-color: rgba(51, 51, 51, 0.49);
     content: "";
     width: 100%;
@@ -1031,6 +1046,60 @@ body {
     font-size: 75px;
     color: var(--color-w);
     display: block;
+    z-index: 10;
+    display: block;
+    position: relative;
+}
+
+.controls {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    z-index: 10;
+    margin-top: 50px;
+}
+
+.controls p {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-w);
+    margin-left: 18px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.controls span {
+    width: 65px;
+    height: 65px;
+    background-color: #0475CA;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.controls span:before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 26px solid #fff;
+    margin-left: 8px;
+    content: '';
+}
+
+.documents {
+    padding-top: 120px;
 }
 
 

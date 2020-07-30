@@ -9,7 +9,7 @@ var config = {
     logPrefix: "server"
 };
 
-var gulp     = require('gulp'),          // Подключаем Gulp
+var gulp     = require('gulp');          // Подключаем Gulp
 	cssmin   = require('gulp-cssmin');   // Минифицирование CSS
 	rename   = require('gulp-rename');   // Смена названиея
 	size     = require('gulp-size');     // Показываем размер файла в консоли
