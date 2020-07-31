@@ -103,8 +103,8 @@ gulp.task('watch', function() {
     gulp.watch('app/assets/js/*.js', gulp.series('js-watch'));
 });
 
-// Начать работу проекта
+// Режим разработки
 gulp.task('run-dev', gulp.parallel('start', 'watch'));
 
-// Закончить работу проекта
+// Cобрать проект с оптимизацией
 gulp.task('run-build', gulp.series('min-css', 'min-img', 'min-icons'));
