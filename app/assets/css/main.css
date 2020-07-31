@@ -1,10 +1,8 @@
-/* бсм */
-
 * {
     font-family: Gilroy;
+    font-weight: 300;
     background-size: cover;
     font-style: normal;
-    font-weight: normal;
     color: var(--color-a);
     text-decoration: none;
     outline: none;
@@ -15,6 +13,14 @@
 :root {
     --color-a: #2E2E43;
     --color-w: #fff;
+    --main: #0078A8;;
+}
+
+.svg-color-root {
+    fill: currentColor;
+    display: inline-block;
+    flex-shrink: 0;
+    user-select: none;
 }
 
 *, *::before, *::after {
@@ -39,6 +45,18 @@ h1 {
 h2 {
     font-weight: 600;
     font-size: 40px;
+}
+
+svg {
+    overflow: hidden;
+}
+
+a.link:hover {
+    color: #078AEC;
+}
+
+a.link:active {
+    color: #035FA5
 }
 
 ol, ul {
@@ -166,7 +184,7 @@ select option {
 }
 
 .form-checkbox-label span {
-    color:var(--color-w);
+    color: var(--color-w);
 }
 
 nav {
@@ -452,6 +470,68 @@ body {
     font-size: 20px;
     line-height: 31px;
     margin-bottom: 40px
+}
+
+.contacts .container  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contacts .contacts__block {
+    position: absolute;
+    background-color: var(--color-w);
+    z-index: 999;
+    padding: 40px 35px;
+    border-radius: 3px;
+}
+
+.contacts .contacts__block .item {
+    margin-bottom: 30px;
+}
+
+.contacts .contacts__block .item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts .contacts__block .item .title {
+    font-weight: 600;
+    font-size: 22.2039px;
+    line-height: 31px;
+    margin-bottom: 8px;
+}
+
+.contacts .contacts__block .item {
+    font-size: 17.7631px;
+    font-weight: 300;
+}
+
+.contacts .contacts__block .item .info__img{
+    width: 100%;
+    height: 200px;
+    margin: 15px 0;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.open__info.open span svg {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.open__info span svg.blue {
+    width: 10px;
+    margin-left: 5px;
+    fill: var(--main);
+    stroke: var(--main);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.165,.84,.44,1);
+    transition: -webkit-transform .3s cubic-bezier(.165,.84,.44,1);
+    transition: transform .3s cubic-bezier(.165,.84,.44,1);
+    transition: transform .3s cubic-bezier(.165,.84,.44,1),-webkit-transform .3s cubic-bezier(.165,.84,.44,1);
 }
 
 .work__content, .company {
@@ -841,6 +921,7 @@ body {
     font-size: 23px;
     line-height: 36px;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 
 .company .reference__content__row .content__text p:last-child {
@@ -955,6 +1036,7 @@ body {
 .block_simple .block li {
     font-size: 24px;
     line-height: 40px;
+    font-weight: 300;
 }
 
 .block_simple .block ul {
@@ -1098,6 +1180,18 @@ body {
 .documents {
     padding-top: 120px;
 }
+
+/* .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    overflow: auto;
+    left: 0;
+    top: 0;
+} */
 
 
 @media (min-width: 1200px) {

@@ -84,9 +84,14 @@ window.onload = function() {
         })
 }
 
+$('.open__info').click(function () {
+    $('.info__img').slideToggle(300);
+    $(this).toggleClass('open');  
+})
+
 DG.then(function () {
     map = DG.map('map', {
-        center: [43.113244, 131.88100],
+        center: [43.107631, 131.875720],
         zoom: 17,
         touchZoom: true,
         scrollWheelZoom: false,
@@ -102,7 +107,7 @@ myIcon = DG.icon({
         iconSize: [100]
     });
 
-    DG.marker([43.113244, 131.881002], {
+    DG.marker([43.107631, 131.875720], {
         icon: myIcon
     }).addTo(map);
 });
