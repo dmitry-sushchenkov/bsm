@@ -60,20 +60,8 @@ window.onload = function() {
     const video = selector => document.querySelector(selector),
         on = 'addEventListener';
 
-        const fullscreen = ()=> {
-            var elem = q('#myContainer')
-            if (elem.requestFullscreen) {
-              elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) {
-              elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) {
-              elem.webkitRequestFullscreen();
-            }
-          }
-
         video('#btnPlay')[on]('click', () => myPlayer.play());
         video('#myPlayer')[on]('click', () => myPlayer.pause());
-        video('#myPlayer')[on]('dblclick', fullscreen)
 
         $('#btnPlay').click(function () {
             $('.video__play').fadeOut(500);
