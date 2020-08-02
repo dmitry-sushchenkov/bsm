@@ -1,17 +1,3 @@
-var header = $('nav'),
-		scrollPrev = 0;
-
-$(window).scroll(function() {
-	var scrolled = $(window).scrollTop();
- 
-	if ( scrolled > 100 && scrolled > scrollPrev ) {
-		header.addClass('out');
-	} else {
-		header.removeClass('out');
-	}
-	scrollPrev = scrolled;
-});
-
 ScrollReveal({
     delay: 0,
     distance: '100px',
@@ -50,6 +36,38 @@ ScrollReveal().reveal("[data-reveal-section-head] > *", { viewFactor: .2 });
 ScrollReveal().reveal("[data-reveal-section]", { viewFactor: .2 });
 ScrollReveal().reveal("[data-reveal-grid] > *", { viewFactor: .2, interval: 200 }); 
 ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 });
+
+$(document).ready(function(){
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+    });
+
+    $('.btn-prev').on('click', function() {
+        $('.slider').slick('slickPrev');
+    });
+
+    $('.btn-next').on('click', function() {
+        $('.slider').slick('slickNext');
+    });
+});
+
+var header = $('nav'),
+		scrollPrev = 0;
+
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+ 
+	if ( scrolled > 100 && scrolled > scrollPrev ) {
+		header.addClass('out');
+	} else {
+		header.removeClass('out');
+	}
+	scrollPrev = scrolled;
+});
 
 $(window).scroll(function() {           
     var st = $(this).scrollTop(); 
