@@ -96,6 +96,16 @@ $('.open__info').click(function () {
     $(this).toggleClass('open');  
 })
 
+$('.nav__burger').click(function () {
+    $('body').addClass('menu-open');
+    $('.nav__block').slideToggle(1);
+})
+
+$('.nav__close').click(function () {
+    $('.nav__block').slideToggle(1);
+    $('body').removeClass('menu-open');
+})
+
 DG.then(function () {
     map = DG.map('map', {
         center: [43.107631, 131.875720],
