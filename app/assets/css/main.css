@@ -93,6 +93,12 @@ select option {
     padding: 16px 32px;
 }
 
+.btn.disabled {
+    pointer-events: none;
+    opacity: .3;
+    cursor: not-allowed;
+}
+
 .btn:hover {
     background-color: #078AEC;
 }
@@ -122,13 +128,13 @@ a.add {
     width: 50px;
     height: 50px;
     background-color: #0475CA;
-    display: block;
+    display: inline-block;
     border-radius: 50%;
     color: var(--color-w);
     text-align: center;
     font-size: 25px;
     line-height: 50px;
-
+    margin-top: 30px;
 }
 
 span.svg__icon {
@@ -776,6 +782,10 @@ body {
     font-weight: 700;  
 }
 
+.resume__form .step:not(.active) {
+    display: none;
+}
+
 .step__liner {
     display: flex;
     flex-wrap: wrap;
@@ -784,7 +794,9 @@ body {
 }
 
 .step__liner .step__item {
-    width: 258px;
+    width: 240px;
+    opacity: .5;
+    cursor: pointer;
 }
 
 .step__liner .step__item p {
@@ -802,20 +814,27 @@ body {
     margin-top: 20px;
 }
 
-.step__item.active {
+.step__liner .step__item.active {
     cursor: pointer;
 }
 
-.step__item.active span {
+.step__liner .step__item.done,
+.step__liner .step__item.active  {
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.step__liner .step__item.done:hover,
+.step__liner .step__item.active:hover {
+ opacity: .8;
+}
+
+.step__liner .step__item.done span {
     background: #04CA3B;
 }
-
-.step__item:not(.active) {
-    opacity: .5;
-}
-
 .step .form__row .block {
-    padding: 80px 0;
+    padding-top: 80px
 }
 
 .step .form__row .block .sub_block {
@@ -861,6 +880,11 @@ body {
     padding: 14px 16px;
     width: 316.66px;
     font-size: 16px;
+}
+
+.step a.btn {
+    display: inline-block;
+    margin-top: 80px;
 }
 
 ::placeholder {
@@ -1534,12 +1558,40 @@ footer .developer a:hover:after {
     display: none;
 }
 
+/* Временное */
+
+.callback-widget {
+    padding: 10px 50px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #B02A05;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.callback-widget .callback-widget__row {
+    position: relative;
+}
+
+.callback-widget .callback-widget__row .btn-cloce {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1400px;
         position: relative;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
 
