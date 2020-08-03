@@ -91,6 +91,7 @@ select option {
     border-radius: 3px;
     color: var(--color-w);
     padding: 16px 32px;
+    display: inline-block;
 }
 
 .btn.disabled {

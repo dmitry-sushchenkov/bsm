@@ -1,3 +1,42 @@
+ScrollReveal({
+    delay: 0,
+    distance: '100px',
+    duration: 600,
+    easing: 'cubic-bezier(.25,.1,.25,1)',
+    interval: 0,
+    opacity: 0,
+    origin: 'bottom',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 0
+    },
+    scale: 1,
+    cleanup: false,
+    container: document.documentElement,
+    desktop: true,
+    mobile: true,
+    reset: false,
+    useDelay: 'always',
+    viewFactor: 0.0,
+    viewOffset: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+    },
+    afterReset: function afterReset(el) {},
+    afterReveal: function afterReveal(el) {},
+    beforeReset: function beforeReset(el) {},
+    beforeReveal: function beforeReveal(el) {}
+});
+
+ScrollReveal().reveal("[data-reveal-title]", { viewFactor: .2 });
+ScrollReveal().reveal("[data-reveal-section-head] > *", { viewFactor: .2 });
+ScrollReveal().reveal("[data-reveal-section]", { viewFactor: .2 });
+ScrollReveal().reveal("[data-reveal-grid] > *", { viewFactor: .2, interval: 200 }); 
+ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 });
+
 $(function() {
 	$(".resume__form-trigger").click(function(event){
 		event.preventDefault()
@@ -64,7 +103,7 @@ $(function() {
 	$(".resume__form .next-step").click(function(event){
         event.preventDefault()
         $('body,html').animate({scrollTop: 0}, 100);
-		$(".resume__form .step.active").hide().removeClass("active").next().fadeIn(500).addClass("active");
+		$(".resume__form .step.active").hide().removeClass("active").next().fadeIn(1000).addClass("active");
 		$(".resume__form .steps-switcher .active").removeClass("active").addClass("done").next().addClass("active");
 		$(".resume__form .steps-switcher").hide().fadeIn(500);
 	});
@@ -76,45 +115,6 @@ $(function() {
 		$(".resume__form .steps-switcher").hide().fadeIn(500);
 	});
 });
-
-ScrollReveal({
-    delay: 0,
-    distance: '100px',
-    duration: 600,
-    easing: 'cubic-bezier(.25,.1,.25,1)',
-    interval: 0,
-    opacity: 0,
-    origin: 'bottom',
-    rotate: {
-        x: 0,
-        y: 0,
-        z: 0
-    },
-    scale: 1,
-    cleanup: false,
-    container: document.documentElement,
-    desktop: true,
-    mobile: true,
-    reset: false,
-    useDelay: 'always',
-    viewFactor: 0.0,
-    viewOffset: {
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0
-    },
-    afterReset: function afterReset(el) {},
-    afterReveal: function afterReveal(el) {},
-    beforeReset: function beforeReset(el) {},
-    beforeReveal: function beforeReveal(el) {}
-});
-
-ScrollReveal().reveal("[data-reveal-title]", { viewFactor: .2 });
-ScrollReveal().reveal("[data-reveal-section-head] > *", { viewFactor: .2 });
-ScrollReveal().reveal("[data-reveal-section]", { viewFactor: .2 });
-ScrollReveal().reveal("[data-reveal-grid] > *", { viewFactor: .2, interval: 200 }); 
-ScrollReveal().reveal(".p-home .tabs", { viewFactor: .2 });
 
 $(document).ready(function(){
     $('.slider').slick({
