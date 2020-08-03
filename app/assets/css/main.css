@@ -118,6 +118,19 @@ select option {
     margin-right: 5px;
 }
 
+a.add {
+    width: 50px;
+    height: 50px;
+    background-color: #0475CA;
+    display: block;
+    border-radius: 50%;
+    color: var(--color-w);
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+
 span.svg__icon {
     display: inline-block;
     -webkit-transition: -webkit-transform .3s cubic-bezier(.165,.84,.44,1);
