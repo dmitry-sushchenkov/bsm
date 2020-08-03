@@ -41,7 +41,9 @@ $(function() {
 				$(select).addClass("active");
 			}
 		}
-	});
+    });
+
+    
 	$(".custom-select li").click(function() {
 		var select = $(this).closest(".custom-select");
 		$(select).find("input").val($(this).text());
@@ -60,17 +62,18 @@ $(function() {
 	$(".containers-intro .container-type li.active").click().closest(".custom-select").removeClass("active");
 	
 	$(".resume__form .next-step").click(function(event){
-		event.preventDefault()
-		$(".resume__form .step.active").hide().removeClass("active").next().fadeIn(1000).addClass("active");
+        event.preventDefault()
+        $('body,html').animate({scrollTop: 0}, 100);
+		$(".resume__form .step.active").hide().removeClass("active").next().fadeIn(500).addClass("active");
 		$(".resume__form .steps-switcher .active").removeClass("active").addClass("done").next().addClass("active");
-		$(".resume__form .steps-switcher").hide().fadeIn(1000);
+		$(".resume__form .steps-switcher").hide().fadeIn(500);
 	});
 	$(".resume__form .steps-switcher li").click(function(){
 		var num = $(this).index()+1;
 		$(".resume__form .step.active").hide().removeClass("active");
-		$(".resume__form .step:nth-of-type("+num+")").fadeIn(1000).addClass("active");
+		$(".resume__form .step:nth-of-type("+num+")").fadeIn(500).addClass("active");
 		$(this).addClass("active").siblings().removeClass("active");
-		$(".resume__form .steps-switcher").hide().fadeIn(1000);
+		$(".resume__form .steps-switcher").hide().fadeIn(500);
 	});
 });
 
@@ -168,7 +171,7 @@ window.onload = function() {
 }
 
 $('.btn-cloce').click(function () {
-    $('.callback-widget').fadeOut();
+    $('.widget').slideUp(200);
 })
 
 $('.open__info').click(function () {

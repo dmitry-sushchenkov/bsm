@@ -99,11 +99,11 @@ select option {
     cursor: not-allowed;
 }
 
-.btn:hover {
+.btn:hover, a.add:hover  {
     background-color: #078AEC;
 }
 
-.btn:active {
+.btn:active,a.add:active  {
     background-color: #035FA5;
 }
 
@@ -864,6 +864,14 @@ body {
     margin-top: 30px;
 }
 
+.step .form__row .row__input__list {
+    display: block;
+}
+
+.step .form__row .row__input__list .item {
+    margin-bottom: 20px;
+}
+
 .step .form__row .form__row__item .item {
     margin-right: 30px;
 }
@@ -1258,7 +1266,7 @@ footer.nr-footer-menu a {
 
 footer .container {
     padding-top: 50px;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 footer .tricolor span {
@@ -1560,7 +1568,7 @@ footer .developer a:hover:after {
 
 /* Временное */
 
-.callback-widget {
+.widget {
     padding: 10px 50px;
     position: fixed;
     left: 0;
@@ -1573,11 +1581,11 @@ footer .developer a:hover:after {
     text-align: center;
 }
 
-.callback-widget .callback-widget__row {
+.widget .widget__row {
     position: relative;
 }
 
-.callback-widget .callback-widget__row .btn-cloce {
+.widget .widget__row .btn-cloce {
     position: absolute;
     top: 0;
     right: 0;
