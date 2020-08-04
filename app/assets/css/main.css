@@ -1825,11 +1825,64 @@ footer .developer a:hover:after {
     .contacts .contacts__block .item .title {
         font-size: 20px;
         line-height: 24px;
-    }
+    } he
 
     .contacts .contacts__block .item .title .info{
         font-size: 16px;
         line-height: 19px;
     }
 
+    .step__liner {
+        white-space: nowrap;
+        overflow: auto;
+        display: block;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .step__liner .step__item {
+        width: 156px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .step__liner .step__item p {
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .step__liner .step__item span {
+        margin-top: 8px;
+    }
+
+    .work__content, .company {
+        padding: 80px 0;
+    }
+
+    .work__content .work__title, .company .work__title {
+        margin-top: 30px;
+    }
 }
+
+@media (max-width: 900px) { 
+    .step .form__row .form__row__item .item {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 700px) { 
+    .step .form__row .form__row__item .item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) { 
+    .step .form__row .form__row__item .item {
+        width: 100%;
+    }
+
+    .step .form__row .block .sub_block:last-child .form__row__item .item {
+        margin-bottom: 30px;
+    }
+}
+
+
