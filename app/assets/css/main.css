@@ -918,6 +918,28 @@ body {
     margin-top: 30px;
 }
 
+.step .form__row .block .final__block {
+    width: 860px;
+    margin: 0 auto;
+}
+
+.step .form__row .block .final__block .final__block__content {
+    background-color: #1C3B69;
+    text-align: center;
+    color: var(--color-w);
+    padding: 50px;
+    border-radius: 3px;
+}
+
+.step .form__row .block .final__block .final__block__content h2 {
+    font-size: 50px;
+}
+
+.step .form__row .block .final__block .final__block__content p {
+    font-size: 24px;
+    line-height: 35px; 
+}
+
 .step a.btn {
     display: inline-block;
     margin-top: 50px;
