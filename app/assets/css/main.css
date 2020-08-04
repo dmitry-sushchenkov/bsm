@@ -135,7 +135,6 @@ a.add {
     text-align: center;
     font-size: 25px;
     line-height: 50px;
-    margin-top: 30px;
 }
 
 span.svg__icon {
@@ -380,9 +379,10 @@ body {
     top: -1px;
 }
 
-.main__header .container {
+.main__header {
     width: 100%;
 }
+
 
 .main__header .container .title__row {
     position: relative;
@@ -390,7 +390,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     align-items: stretch;
-    justify-content: space-between;    
+    justify-content: space-between;
+    padding-top: 120px;
 }
 
 .main__header .title {
@@ -838,21 +839,28 @@ body {
     padding-top: 80px
 }
 
-.step .form__row .block .sub_block {
-    margin-top: 40px;
-}
-
 .step .form__row .title p {
     font-size: 40px;
     line-height: 116.18%;
     color: var(--color-w);
 }
 
+.step .form__row .title {
+    margin-bottom: 40px;
+}
+
+.step .form__row .subtitle {
+    margin-bottom: 30px;
+}
 
 .step .form__row .subtitle p {
     font-size: 22px;
     line-height: 116.18%;
     color: var(--color-w);
+}
+
+.step .form__row .sub_block {
+    margin-bottom: 15px;
 }
 
 .step .form__row .form__row__item {
@@ -863,6 +871,11 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 30px;
+
+    margin: 0 -15px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .step .form__row .row__input__list {
@@ -874,7 +887,9 @@ body {
 }
 
 .step .form__row .form__row__item .item {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 25%;
+    padding: 0 15px 0;
 }
 
 .step .form__row .form__row__item .item:last-child {
@@ -887,13 +902,25 @@ body {
     border-radius: 3px;
     color: var(--color-w);
     padding: 14px 16px;
-    width: 316.66px;
+    width: 100%;
     font-size: 16px;
+}
+
+.step .form__row .block .sub_block:last-child .form__row__item .item {
+    margin-bottom: 0;
+}
+
+.step:first-child .form__row .block:first-child .sub_block .form__row__item .item {
+    margin-bottom: 30px;
+}
+
+.step .form__row .block .sub_block:last-child .item:nth-child(5) .add {
+    margin-top: 30px;
 }
 
 .step a.btn {
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 ::placeholder {
@@ -1604,6 +1631,13 @@ footer .developer a:hover:after {
     }
 }
 
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        position: relative;
+    }    
+}
+
 @media (min-width: 1000px) {
     nav .nav__burger {
         display: none;
@@ -1614,6 +1648,9 @@ footer .developer a:hover:after {
 
     .btn {
         display: inline-block;
+        padding: 16px 20px;
+        font-size: 14px;
+        line-height: 17px;
     }
 
     body.menu-open {
@@ -1645,7 +1682,7 @@ footer .developer a:hover:after {
         border-radius: 50%;
         position: absolute;
         top: 15px;
-        right: 20px;
+        right: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1701,6 +1738,10 @@ footer .developer a:hover:after {
         display: block;
     }
 
+    .main__header {
+        height: auto;
+    }
+
     .main__header .container .title__row {
         display: block;
     }
@@ -1718,6 +1759,77 @@ footer .developer a:hover:after {
     .main__header .title,
     .main__header .header__block {
         width: 100%;
+    }
+
+    .main__header .header__block p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .inner__header {
+        position: relative;
+        bottom: 0;
+        margin-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .main__header, .inner__header .services__header {
+        display: block;
+    }
+
+    .inner__header .services__header {
+        padding: 20px;
+    }
+
+    .inner__header .services__header .item {
+        width: 100%;
+    }
+
+    .inner__header .services__header .item {
+        margin-bottom: 15px;
+    }
+
+    .inner__header .services__header .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .inner__header .services__header p {
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .demands {
+        padding: 50px 0;
+    }
+
+    .demands .demands__block {
+        width: 100%;
+        padding: 35px 20px;
+    }
+    
+    .demands .demands__block p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .demands span {
+        display: none;
+    }
+
+    .contacts .container {
+        display: block;
+        padding: 0;
+    }
+
+    .contacts .contacts__block .item .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contacts .contacts__block .item .title .info{
+        font-size: 16px;
+        line-height: 19px;
     }
 
 }
