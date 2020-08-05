@@ -10,6 +10,7 @@ var config = {
 };
 
 var gulp     = require('gulp');          // Подключаем Gulp
+    rev      = require('gulp-rev');
 	cssmin   = require('gulp-cssmin');   // Минифицирование CSS
 	rename   = require('gulp-rename');   // Смена названиея
 	size     = require('gulp-size');     // Показываем размер файла в консоли
@@ -32,6 +33,7 @@ gulp.task('min-css', function(done) {
         .pipe(cssmin())
         .pipe(debug({title: 'СТАЛО'}))
         .pipe(size())
+        .pipe(rev())
         .pipe(rename({suffix: '.min' }))
         .pipe(gulp.dest('build/css'));
           console.log("HTTP Server Started");
