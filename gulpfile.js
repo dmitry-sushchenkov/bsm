@@ -23,6 +23,7 @@ var gulp     = require('gulp');          // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer');     // Авто-добавление префиксов
 
 gulp.task('min-css', function(done) {
+    del.sync('build');
     gulp.src('app/assets/css/main.css')
     	.pipe(debug({title: 'БЫЛО'}))
     	.pipe(size())
@@ -36,7 +37,6 @@ gulp.task('min-css', function(done) {
         .pipe(rev())
         .pipe(rename({suffix: '.min' }))
         .pipe(gulp.dest('build/css'));
-          console.log("HTTP Server Started");
   		done();
 });
 

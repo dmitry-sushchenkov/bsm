@@ -1313,7 +1313,11 @@ body {
 }
 
 .documents {
-  padding-top: 120px;
+  padding: 120px 0;
+}
+
+footer {
+    background-color: #102d57;
 }
 
 footer p,
