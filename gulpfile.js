@@ -10,7 +10,7 @@ var config = {
 };
 
 var gulp     = require('gulp');          // Подключаем Gulp
-    rev      = require('gulp-rev');
+    rev      = require('gulp-rev');      // Добавления хэша содержимого к именам файлов
 	cssmin   = require('gulp-cssmin');   // Минифицирование CSS
 	rename   = require('gulp-rename');   // Смена названиея
 	size     = require('gulp-size');     // Показываем размер файла в консоли
@@ -19,7 +19,7 @@ var gulp     = require('gulp');          // Подключаем Gulp
     imagemin = require('gulp-imagemin'); // Сжатия PNG, JPEG, GIF и SVG изображений
     sass     = require('gulp-sass'),     // Модуль для компиляции SASS (SCSS) в CSS
     del      = require('del');           // Удаление файлов и папок
-    browserSync  = require("browser-sync").create(); // Авто-обновление сттаницы браузера
+    browserSync  = require("browser-sync").create(); // Авто-обновление страницы браузера
     autoprefixer = require('gulp-autoprefixer');     // Авто-добавление префиксов
 
 gulp.task('min-css', function(done) {
@@ -48,7 +48,6 @@ gulp.task('sass-css', () => // Преобразование SASS в CSS
 
 gulp.task('min-img', () =>
     gulp.src('app/assets/img/*')
-        //.pipe(gulp.dest('old/images')) // Длеаем страную копию на всякий случай
         .pipe(size())
         .pipe(imagemin())
         .pipe(size())
