@@ -396,7 +396,7 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 
 .main__header .title {
