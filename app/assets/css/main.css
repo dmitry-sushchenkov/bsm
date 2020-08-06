@@ -510,6 +510,7 @@ body {
   background-color: var(--color-w);
   margin-left: auto;
   z-index: 90;
+  border-radius: 3px;
 }
 
 .demands .demands__block p {
@@ -1300,12 +1301,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  transition: .3s;
+}
+
+.controls span:hover {
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .controls span:before {
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 26px solid #fff;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 21px solid #fff;
   margin-left: 8px;
   content: "";
 }
@@ -1904,7 +1911,7 @@ footer .developer a:hover:after {
     right: 0;
     bottom: 0;
     height: 100%;
-    width: 40px;
+    width: 100%;
     background: linear-gradient(270deg, #102D57 0%, rgba(16, 45, 87, 0) 100%);
 }
 
