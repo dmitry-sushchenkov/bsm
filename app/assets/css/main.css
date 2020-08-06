@@ -161,8 +161,7 @@ span.svg__icon {
 }
 
 .form-checkbox-label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+
   display: inline-flex;
   cursor: pointer;
   position: relative;
@@ -204,7 +203,7 @@ span.svg__icon {
   background-color: #1c3b69;
 }
 
-.form-checkbox:checked + .form-checkbox-label:after {
+.form-checkbox:checked+.form-checkbox-label:after {
   content: "";
   opacity: 1;
   background-image: url(../icons/checkmark.svg);
@@ -606,7 +605,7 @@ body {
 }
 
 .work__filters .work__filers__btn {
-  text-align: end;
+  text-align: right;
   margin-bottom: 32px;
 }
 
@@ -915,16 +914,15 @@ body {
   font-size: 16px;
 }
 
+.step .form__row .form__row__item .item input::-ms-input-placeholder {
+  color: var(--color-w);
+}
+
 .step .form__row .block .sub_block:last-child .form__row__item .item {
   margin-bottom: 0;
 }
 
-.step:first-child
-  .form__row
-  .block:first-child
-  .sub_block
-  .form__row__item
-  .item {
+.step:first-child .form__row .block:first-child .sub_block .form__row__item .item {
   margin-bottom: 30px;
 }
 
@@ -1148,7 +1146,7 @@ body {
   margin-bottom: 43px;
 }
 
-.error__page .error__content .error__page__nums > span {
+.error__page .error__content .error__page__nums>span {
   font-weight: 800;
   font-size: 287.533px;
   line-height: 352px;
@@ -1317,7 +1315,7 @@ body {
 }
 
 footer {
-    background-color: #102d57;
+  background-color: #102d57;
 }
 
 footer p,
@@ -1435,6 +1433,7 @@ footer .footer__row .footer__text {
 
 footer .footer__row .footer__text p:first-child {
   margin-bottom: 25px;
+  font-family: none;
 }
 
 footer .developer a:after {
