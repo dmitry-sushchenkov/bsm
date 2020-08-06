@@ -1697,6 +1697,14 @@ footer .developer a:hover:after {
     overflow: hidden;
   }
 
+  .nav__burger {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   nav {
     height: 60px;
   }
@@ -1742,7 +1750,6 @@ footer .developer a:hover:after {
     height: 100vh;
     background: #102d57;
     padding: 23vw 4vw;
-    transition: ease-in-out 0.1s;
     overflow: auto;
     z-index: 9999;
   }
@@ -1750,8 +1757,8 @@ footer .developer a:hover:after {
   nav .nav__content .nav__links li a {
     font-weight: 600;
     color: var(--color-w);
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 28px;
   }
 
   nav .nav__content .nav__links li {
@@ -1770,7 +1777,7 @@ footer .developer a:hover:after {
 
   nav .nav__content .nav__tools a {
     color: var(--color-w);
-    font-size: 36px;
+    font-size: 30px;
     line-height: 32px;
     font-weight: 700;
     margin-top: 50px;
@@ -1783,6 +1790,7 @@ footer .developer a:hover:after {
 
   .main__header .container .title__row {
     display: block;
+    padding-top: 120px; 
   }
 
   .main__header .title h1 {
@@ -1873,8 +1881,9 @@ footer .developer a:hover:after {
   }
 
   .step__liner {
+    position: relative;
     white-space: nowrap;
-    overflow: auto;
+    overflow-x: auto;
     display: block;
     -webkit-overflow-scrolling: touch;
   }
@@ -1884,6 +1893,20 @@ footer .developer a:hover:after {
     display: inline-block;
     margin-right: 20px;
   }
+
+  .step__liner .step__item:last-child {
+    margin-right: 0;
+  }
+
+  .step__liner:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(270deg, #102D57 0%, rgba(16, 45, 87, 0) 100%);
+}
 
   .step__liner .step__item p {
     font-weight: 500;
@@ -1902,6 +1925,9 @@ footer .developer a:hover:after {
   .work__content .work__title,
   .company .work__title {
     margin-top: 30px;
+  }
+  footer {
+    
   }
 }
 

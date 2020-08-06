@@ -181,11 +181,12 @@ $('.open__info').click(function () {
 
 $('.nav__burger').click(function () {
     $('body').addClass('menu-open');
-    $('.nav__block').slideToggle(1);
+    $('.nav__block').slideToggle(400);
+    $('.nav__links').toggleClass('active');
 })
 
 $('.nav__close').click(function () {
-    $('.nav__block').slideToggle(1);
+    $('.nav__block').slideToggle(400);
     $('body').removeClass('menu-open');
 })
 
