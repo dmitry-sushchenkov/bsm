@@ -35,7 +35,7 @@ ScrollReveal().reveal("[data-reveal-title]", {
     viewFactor: .2
 });
 ScrollReveal().reveal("[data-reveal-section-head] > *", {
-    viewFactor: .2
+    viewFactor: .2  
 });
 ScrollReveal().reveal("[data-reveal-section]", {
     viewFactor: .2
@@ -143,8 +143,6 @@ $(document).ready(function () {
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                infinite: true,
-                dots: true
               }
             },
             {
@@ -157,7 +155,7 @@ $(document).ready(function () {
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             }
@@ -219,11 +217,28 @@ $('.open__info').click(function () {
     $(this).toggleClass('open');
 })
 
+
+
+
 $('.nav__burger').click(function () {
     $(this).toggleClass('is-active');
     $('body').toggleClass('menu-open');
     $('.nav__block').slideToggle(400);
+    $('.work__filters').slideUp(400);
 })
+
+$('.filters__btn__mobile a').click(function () {
+    $('.menu__open').toggleClass('menu__open');
+    $('.nav__burger').toggleClass('is-active');
+    $('body').toggleClass('menu-open');
+    $('.work__filters').slideDown(400);
+    $('.nav__burger').toggleClass('is-active');
+})
+
+$('.add').click(function () {
+    $(".form__row__item").clone().prependTo(".form__row__item")
+})
+
 
 DG.then(function () {
     map = DG.map('map', {

@@ -72,7 +72,7 @@
             </div>
             <div class="work__filters">
                 <div class="work__filers__btn">
-                    <a class="btn-reset" href=""><span class="svg__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a class="btn-reset" href=""><span class="svg__icon"><svg class="svg-color-root" xmlns="http://www.w3.org/2000/svg"
                                 width="14" height="14" viewBox="0 0 14 14" fill="none">
                                 <path
                                     d="M1.37016 5.17189C0.202505 8.43312 1.88963 12.0301 5.13265 13.1909C7.55372 14.0577 10.2221 13.364 11.9301 11.4195C11.9716 11.3749 12.0038 11.3224 12.0248 11.2652C12.0458 11.2079 12.0551 11.1471 12.0522 11.0862C12.0492 11.0252 12.0341 10.9655 12.0078 10.9106C11.9814 10.8556 11.9443 10.8064 11.8987 10.766C11.853 10.7256 11.7998 10.6947 11.742 10.6752C11.6842 10.6557 11.6231 10.6479 11.5623 10.6524C11.5015 10.6568 11.4422 10.6734 11.3879 10.7012C11.3336 10.7289 11.2854 10.7672 11.2462 10.8139C9.78895 12.471 7.5098 13.0634 5.44208 12.3231C2.67279 11.3315 1.23157 8.25978 2.22825 5.47604C3.22492 2.69229 6.28835 1.23356 9.05763 2.22509C9.99517 2.56026 10.8193 3.15283 11.4355 3.93487C11.4469 3.94883 11.4596 3.96176 11.4733 3.97351L9.98592 3.97977C9.87808 3.98046 9.77392 4.019 9.69159 4.08866C9.60927 4.15832 9.55402 4.25467 9.53548 4.3609C9.51695 4.46713 9.5363 4.5765 9.59017 4.66992C9.64404 4.76334 9.729 4.83488 9.83023 4.87205C9.87999 4.88928 9.93229 4.89802 9.98495 4.89791L12.5427 4.8879C12.6028 4.88784 12.6623 4.87585 12.7177 4.85263C12.7732 4.82942 12.8235 4.79543 12.8657 4.75265C12.9512 4.66577 12.9994 4.54896 13 4.42709V1.85936C13.0002 1.79931 12.9884 1.73982 12.9655 1.68432C12.9426 1.62883 12.9089 1.57842 12.8664 1.53601C12.8238 1.49359 12.7733 1.46002 12.7178 1.43722C12.6622 1.41441 12.6027 1.40283 12.5427 1.40315C12.421 1.40399 12.3047 1.45292 12.219 1.53926C12.1333 1.62559 12.0853 1.74232 12.0853 1.86395L12.0846 3.28849C11.371 2.41089 10.4308 1.74533 9.36595 1.36395C6.12418 0.203242 2.53601 1.91135 1.37016 5.17189Z"
@@ -120,8 +120,6 @@
                             <option value="Тест">Тест</option>
                         </select>
                     </div>
-                </div>
-                <div class="work__filter__row">
                     <div class="filter__cell">
                         <select name="" id="">
                             <option value="" selected="" onchange="top.location=this.value">Rank</option>
@@ -164,6 +162,24 @@
                     </div>
                 </div>
             </div>
+            <div class="filters__btn__mobile">
+                <a class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                    <g clip-path="url(#clip0)">
+                    <path d="M3.09998 -1.52588e-05H2.09998V16H3.09998V-1.52588e-05Z" fill="white"/>
+                    <path d="M9.90002 -1.52588e-05H8.90002V16H9.90002V-1.52588e-05Z" fill="white"/>
+                    <path d="M16.6 -1.52588e-05H15.6V16H16.6V-1.52588e-05Z" fill="white"/>
+                    <path d="M16.1 9.99998C17.2598 9.99998 18.2 9.10455 18.2 7.99998C18.2 6.89542 17.2598 5.99998 16.1 5.99998C14.9402 5.99998 14 6.89542 14 7.99998C14 9.10455 14.9402 9.99998 16.1 9.99998Z" fill="white" stroke="white"/>
+                    <path d="M2.59998 13C3.75977 13 4.70001 12.1046 4.70001 11C4.70001 9.89542 3.75977 8.99998 2.59998 8.99998C1.44018 8.99998 0.5 9.89542 0.5 11C0.5 12.1046 1.44018 13 2.59998 13Z" fill="white" stroke="white"/>
+                    <path d="M9.40002 5.99998C10.5598 5.99998 11.5 5.10455 11.5 3.99998C11.5 2.89542 10.5598 1.99998 9.40002 1.99998C8.24023 1.99998 7.29999 2.89542 7.29999 3.99998C7.29999 5.10455 8.24023 5.99998 9.40002 5.99998Z" fill="white" stroke="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="19" height="16" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>Фильтр</a>
+            </div>
             <div class="work__list__content">
                 <div class="work__list__sort" data-reveal-title>
                     <div class="sort__item">
@@ -195,13 +211,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -211,13 +229,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -227,13 +247,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -243,13 +265,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -259,13 +283,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -275,13 +301,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -291,13 +319,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -307,13 +337,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -323,13 +355,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -339,13 +373,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -355,13 +391,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -371,13 +409,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -387,13 +427,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -403,13 +445,15 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
@@ -419,13 +463,123 @@
                                 <p>Crude Oil Tanker/ Products Tanker</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
                                 <p>28.07.2020</p>
                             </div>
                             <div class="sort__item">
-                                <p>from 3 to 6 months
-                                </p>
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
                             </div>
                             <div class="sort__item">
+                                <p class="subtitle">Duration</p>
+                                <p>12 000 $</p>
+                            </div>
+                        </a>
+                        <a href="vacancy.html" class="work__item">
+                            <div class="title">
+                                <h2>Electro-Technical Officers</h2>
+                                <p>Crude Oil Tanker/ Products Tanker</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
+                                <p>28.07.2020</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Duration</p>
+                                <p>12 000 $</p>
+                            </div>
+                        </a>
+                        <a href="vacancy.html" class="work__item">
+                            <div class="title">
+                                <h2>Electro-Technical Officers</h2>
+                                <p>Crude Oil Tanker/ Products Tanker</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
+                                <p>28.07.2020</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Duration</p>
+                                <p>12 000 $</p>
+                            </div>
+                        </a>
+                        <a href="vacancy.html" class="work__item">
+                            <div class="title">
+                                <h2>Electro-Technical Officers</h2>
+                                <p>Crude Oil Tanker/ Products Tanker</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
+                                <p>28.07.2020</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Duration</p>
+                                <p>12 000 $</p>
+                            </div>
+                        </a>
+                        <a href="vacancy.html" class="work__item">
+                            <div class="title">
+                                <h2>Electro-Technical Officers</h2>
+                                <p>Crude Oil Tanker/ Products Tanker</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
+                                <p>28.07.2020</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Duration</p>
+                                <p>12 000 $</p>
+                            </div>
+                        </a>
+                        <a href="vacancy.html" class="work__item">
+                            <div class="title">
+                                <h2>Electro-Technical Officers</h2>
+                                <p>Crude Oil Tanker/ Products Tanker</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
+                                <p>28.07.2020</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Duration</p>
+                                <p>12 000 $</p>
+                            </div>
+                        </a>
+                        <a href="vacancy.html" class="work__item">
+                            <div class="title">
+                                <h2>Electro-Technical Officers</h2>
+                                <p>Crude Oil Tanker/ Products Tanker</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Boarding date</p>
+                                <p>28.07.2020</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Wages</p>
+                                <p>from 3 to 6 months</p>
+                            </div>
+                            <div class="sort__item">
+                                <p class="subtitle">Duration</p>
                                 <p>12 000 $</p>
                             </div>
                         </a>
