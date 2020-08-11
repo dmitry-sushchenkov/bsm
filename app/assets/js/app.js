@@ -217,9 +217,6 @@ $('.open__info').click(function () {
     $(this).toggleClass('open');
 })
 
-
-
-
 $('.nav__burger').click(function () {
     $(this).toggleClass('is-active');
     $('body').toggleClass('menu-open');
