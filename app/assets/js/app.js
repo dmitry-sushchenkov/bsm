@@ -139,6 +139,13 @@ $(document).ready(function () {
         slidesToScroll: 2,
         responsive: [
             {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+            },
+            {
               breakpoint: 1024,
               settings: {
                 slidesToShow: 3,

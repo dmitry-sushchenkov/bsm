@@ -1189,15 +1189,22 @@ body {
 }
 
 .block_simple {
-  display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+  margin: 0 -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
 .block_simple .block {
-  width: 645px;
+  width: 50%;
+  padding: 0 15px;
 }
 
 .block_simple .block p,
@@ -1213,21 +1220,20 @@ body {
 
 .wrap_block .company__stat {
   background-color: #102d57;
-  padding: 70px;
-  height: 540px;
-  margin-bottom: 290px;
+  padding: 70px 0;
 }
 
 .wrap_block .company__stat .stat__row {
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
   margin-bottom: 70px;
+  margin: 0 -15px
 }
 
 .wrap_block .company__stat .stat__row .item {
-  width: 203px;
+  padding: 0 15px;
+  width: 230px;
+  margin-bottom: 60px;
 }
 
 .wrap_block .company__stat .stat__row .item:last-child {
@@ -1235,28 +1241,26 @@ body {
 }
 
 .wrap_block .company__stat .stat__row .item .item__title {
-  font-size: 40px;
+  font-size: 55px;
   line-height: 116.18%;
   font-weight: 800;
   color: var(--color-w);
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .wrap_block .company__stat .stat__row .item .item__info {
   color: var(--color-w);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 116.18%;
 }
 
 .wrap_block .company__stat .video__block {
   position: relative;
-  height: 600px;
   width: 100%;
 }
 
 .wrap_block .company__stat .video__block video {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
@@ -2156,14 +2160,6 @@ footer .developer a:hover:after {
     padding: 25px;
   }
 
-  .company .reference__row .item .block:before {
-    display: none;
-  }
-
-  .company .reference__row .item .block:hover h2 {
-    color: #2e2e43;
-  }
-
   .company .reference__row .item h2,
   .navigation-list .list_item h2 {
     font-size: 15px;
@@ -2342,21 +2338,17 @@ footer .developer a:hover:after {
     line-height: 16px;
   }
 
-  .wrap_block .company__stat .stat__row .item {
-    width: 100%;
-    display: flex;
-  }
-
   .wrap_block .company__stat .video__block .video__play .title {
     display: none;
   }
 
   .wrap_block .company__stat .video__block .video__play {
     padding: 0;
+    justify-content: center;
   }
 
   .wrap_block .company__stat .video__block {
-    height: 202px;
+   
   }
 
   .controls {
@@ -2373,6 +2365,8 @@ footer .developer a:hover:after {
   .controls span {
     width: 50px;
     height: 50px;
+    margin: auto;
+    margin-bottom: 15px;
   }
 
   .controls p {
@@ -2397,16 +2391,13 @@ footer .developer a:hover:after {
   }
 
   .documents .slider .slider__item img {
-    height: 225px;
+    height: auto;
 
   }
 
   .documents .slider .slider__item {
-    max-height: 225px;
-  }
-
-  .documents {
-    padding: 70px 0;
+    height: auto;
+    max-height: fit-content;
   }
 
   .navigation-list .list_item {
@@ -2422,7 +2413,21 @@ footer .developer a:hover:after {
 
   .step .form__row .form__row__item .item,
   .work__filter__row .filter__cell {
-    width: 33.33%;
+    idth: 33.33%;
+  }
+
+  .work__list__content .work__list__sort .sort__item:nth-child(4), .work__list .work__item .sort__item:nth-child(4) {
+    width: 15%;
+  }
+}
+
+@media (min-width: 750px) {
+  .filters__btn__mobile .btn {
+    display: none;
+  }
+
+  .work__list .work__item .sort__item .subtitle {
+    display: none;
   }
 }
 
@@ -2436,15 +2441,25 @@ footer .developer a:hover:after {
   .navigation-list .list_item {
     width: 50%;
   }
-}
 
-@media (min-width: 750px) {
-  .filters__btn__mobile .btn {
-    display: none;
+  .block_simple .block {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .block_simple .block:last-child {
+    margin-bottom: 0;
   }
 
-  .work__list .work__item .sort__item .subtitle {
-    display: none;
+  .controls span:before {
+    margin-left: 1px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left-width: 11px;
+  }
+
+  .wrap_block .company__stat .stat__row .item {
+    width: 50%;
   }
 }
 
