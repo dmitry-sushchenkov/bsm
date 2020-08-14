@@ -192,6 +192,14 @@ $(window).scroll(function () {
     scrollPrev = scrolled;
 });
 
+$(window).scroll(function(){
+    if ( $(this).scrollTop() > 100 ) {
+        $('nav').removeClass('low');
+    } else {
+        $('nav').addClass('low');
+    }
+});
+
 $(window).scroll(function () {
     var st = $(this).scrollTop();
     $(".demands span").css({

@@ -229,6 +229,10 @@ nav {
   transform: translateY(0);
 }
 
+nav.low {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 nav.out {
   -webkit-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
