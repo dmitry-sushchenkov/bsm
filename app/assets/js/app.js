@@ -35,7 +35,7 @@ ScrollReveal().reveal("[data-reveal-title]", {
     viewFactor: .2
 });
 ScrollReveal().reveal("[data-reveal-section-head] > *", {
-    viewFactor: .2  
+    viewFactor: .2
 });
 ScrollReveal().reveal("[data-reveal-section]", {
     viewFactor: .2
@@ -137,36 +137,35 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 2,
-        responsive: [
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
             {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
             }
-            },
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            }
-          ]
+        ]
     });
 
     $('.btn-prev').on('click', function () {
@@ -192,8 +191,8 @@ $(window).scroll(function () {
     scrollPrev = scrolled;
 });
 
-$(window).scroll(function(){
-    if ( $(this).scrollTop() > 100 ) {
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
         $('nav').removeClass('low');
     } else {
         $('nav').addClass('low');
