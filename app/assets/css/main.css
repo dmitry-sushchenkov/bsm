@@ -119,6 +119,9 @@ a.add:active {
   line-height: 116.18%;
   color: var(--color-w);
   position: relative;
+  cursor: pointer;
+  background: initial;
+  border: initial;
 }
 
 .btn-reset:hover span {
@@ -1754,6 +1757,7 @@ footer .developer a:hover:after {
     display: block;
     margin-top: 40px;
   }
+
   .company .reference__content__row .content__text {
     width: 100%;
   }
@@ -2351,9 +2355,7 @@ footer .developer a:hover:after {
     justify-content: center;
   }
 
-  .wrap_block .company__stat .video__block {
-   
-  }
+  .wrap_block .company__stat .video__block {}
 
   .controls {
     text-align: center;
@@ -2420,7 +2422,8 @@ footer .developer a:hover:after {
     idth: 33.33%;
   }
 
-  .work__list__content .work__list__sort .sort__item:nth-child(4), .work__list .work__item .sort__item:nth-child(4) {
+  .work__list__content .work__list__sort .sort__item:nth-child(4),
+  .work__list .work__item .sort__item:nth-child(4) {
     width: 15%;
   }
 }
@@ -2441,7 +2444,7 @@ footer .developer a:hover:after {
   .work__filter__row .filter__cell {
     width: 50%;
   }
-  
+
   .navigation-list .list_item {
     width: 50%;
   }
@@ -2450,7 +2453,7 @@ footer .developer a:hover:after {
     width: 100%;
     margin-bottom: 15px;
   }
-  
+
   .block_simple .block:last-child {
     margin-bottom: 0;
   }
