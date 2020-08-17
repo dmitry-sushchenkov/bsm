@@ -29,7 +29,7 @@
   box-sizing: border-box;
 }
 
-a {
+a, .btn {
   -o-transition: 0.3s ease-in;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
@@ -92,10 +92,16 @@ select option {
   line-height: 19px;
   background-color: #0475ca;
   border-radius: 3px;
+  border: initial;
   color: var(--color-w);
   padding: 16px 32px;
   display: inline-block;
   text-align: center;
+}
+
+.btn.btn-default {
+  display: block;
+  margin: 50px auto 0 auto;
 }
 
 .btn.disabled {
@@ -749,11 +755,14 @@ body {
   align-items: stretch;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 0 -15px;
   margin-top: 50px;
 }
 
 .vacancy__row .vacancy__text {
-  width: 890px;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  padding: 0 15px;
 }
 
 .vacancy__row .vacancy__section {
@@ -779,10 +788,16 @@ body {
 }
 
 .vacancy__row .vacancy__main {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  padding: 0 15px;
+  height: min-content;
+}
+
+.vacancy__row .vacancy__main .block {
   padding: 45px;
   background: #1c3b69;
   border-radius: 3px;
-  height: min-content;
 }
 
 .vacancy__row .vacancy__main .item {
@@ -1797,6 +1812,12 @@ footer .developer a:hover:after {
     line-height: 17px;
   }
 
+  .btn.btn-default {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 100%;
+  }
+
   body.menu-open {
     overflow: hidden;
   }
@@ -2225,12 +2246,16 @@ footer .developer a:hover:after {
     width: 100%;
     order: 2;
     margin-top: 30px;
+    flex: inherit;
+    max-width: inherit;
   }
 
   .vacancy__row .vacancy__main {
     order: 1;
     width: 100%;
-    padding: 20px;
+    padding: 0 15px;
+    flex: inherit;
+    max-width: inherit;
   }
 
   .vacancy__row .vacancy__main .item {
