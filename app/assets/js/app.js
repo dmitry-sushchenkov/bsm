@@ -129,6 +129,33 @@ $(function () {
     });
 });
 
+
+$('input:radio[name=specialty]').change(function() {
+    
+    if (this.value == 'deck__officer') {       
+        $(".specialty__form.active").removeClass("active");          
+        $('#deck__officer__form').addClass('active');
+    }
+    
+    else if (this.value == 'engine_officer') {
+        $(".specialty__form.active").removeClass("active");  
+        $('#engine_officer__form').addClass('active');
+    }
+
+    else if (this.value == 'rating') {
+        $(".specialty__form.active").removeClass("active");  
+        $('#rating__form').addClass('active');
+    }
+});
+
+
+$('.nav__burger').click(function () {
+    $(this).toggleClass('is-active');
+    $('body').toggleClass('menu-open');
+    $('.nav__block').slideToggle(400);
+    $('.work__filters').slideUp(400);
+})
+
 $(document).ready(function () {
     $('.slider').slick({
         dots: false,
