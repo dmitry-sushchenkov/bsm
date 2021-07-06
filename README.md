@@ -1,5 +1,5 @@
 ## Установка
-* Установить [NodeJS](https://nodejs.org/en/)
+* Установить [Node.js](https://nodejs.org/en/)
 * Установить gulp глобально: ```npm i --g gulp```
 * Клонировать проект к себе
 
